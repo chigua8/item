@@ -1,6 +1,6 @@
 <html>
     <head>
-	<style>
+	<style type="text/css">>
         /* 容器样式 */
         .image-container {
             display: flex;
@@ -22,18 +22,21 @@
             /* height: 400px; */
             /* object-fit: cover; */
         }
-		type="text/css">
+		
 		
 		body{
 		    margin: 0;          /* 新增 */
 			padding: 0;         /* 新增 */
-		   background:#4B0082; /*设置页面背景颜色*/
+		   background:#DCDCDC; /*设置页面背景颜色*/
 		   text-align:center; /*设置文字居中*/
 		}
 		#qun_safety > div {
-        width: 100%;
+         margin: 0;    /* 清除默认外边距 */
+		 padding:0;
+		width: 100%;
         box-sizing: border-box;
-        padding: 10px 0;
+		text-align: left;
+       
        }
 		.flicker{
 		   color:#9966FF; /*设置文字颜色*/
@@ -75,14 +78,16 @@
     </head>
 <body>
     
-<div id="zhanwei"></div><title>官方进群入口</title>
+<title>官方进群入口</title>
             <div id="qun_safety">
  
-                <div style="background-color: #90EE90;"  > <img src="https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico" class="icon-image">二维码已通过安全验证
+                <div  style="background-color: #90EE90; color: #FFFFFF; "  > <img src="https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico" class="icon-image">二维码已通过安全验证
 				
 				</div>
 				
-            </div><div id="qun_beizhu"><p style="color:red;text-align:center;font-size:24px;font-weight:bold; ">↓  重要  公告(必 看) ↓ </p >
+            </div>
+			
+			<div id="qun_beizhu"><p style="color:red;text-align:center;font-size:24px;font-weight:bold; ">↓  重要  公告(必 看) ↓ </p >
 <p style="color:#008000;text-align:center;font-size:19px;font-weight:bold; ">群里禁止发言  违规后会被踢</p >
 <p style="color: #0000FF;text-align:center;font-size:19px;font-weight:bold; ">但凡违规被踢 永久拉黑 不能再进群</p >
 <p style="color:#FF4500;text-align:center;font-size:19px;font-weight:bold; ">这不是H群 不是H群 寻H勿进</p >
