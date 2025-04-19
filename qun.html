@@ -1,5 +1,29 @@
 <html>
     <head>
+	<style>
+        /* 容器样式 */
+        .image-container {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center;     /* 垂直居中 */
+            height: 100vh;          /* 占满整个视口高度 */
+            margin: 0;              /* 移除默认外边距 */
+        }
+
+        /* 图片样式 */
+        .responsive-image {
+            max-width: 80%;       /* 最大宽度为容器的80% */
+            max-height: 80%;      /* 最大高度为容器的80% */
+            height: auto;         /* 保持宽高比 */
+            width: auto;         /* 保持宽高比 */
+            
+            /* 如果需要固定尺寸 */
+            /* width: 600px; */
+            /* height: 400px; */
+            /* object-fit: cover; */
+        }
+    </style>
+	
         <meta name="wechat-enable-text-zoom-em" content="true">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,6 +48,6 @@
 <p style="color:#FF4500;text-align:center;font-size:19px;font-weight:bold; ">这不是H群 不是H群 寻H勿进</p >
 <p style="color:#FF1493;text-align:center;font-size:22px;font-weight:bold; ">♡进群务必先阅读 群公告♡</p >
                             <p id="scanTips">请长按下方二维码进群</p>
-                            <div id="zm_qrcode">
-                                <img src="https://upvr.net/Material/image/f6f68dad9594e4ec562d9955979fb22c/02fb233f4152c46985ff7f85e70e7184.jpg" />
+                            <div class="image-container">
+                                <img src="https://upvr.net/Material/image/f6f68dad9594e4ec562d9955979fb22c/02fb233f4152c46985ff7f85e70e7184.jpg" class="responsive-image"/>
                             </div>
